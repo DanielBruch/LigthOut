@@ -1,0 +1,40 @@
+<div >
+  <span *ngIf="winCheck()" title="You Win">
+    You Win
+  </span>
+</div>
+<div>
+  <div class="main">
+
+    <div class="box" [ngClass]="{enable:GetPositionStatus(0), disable:!GetPositionStatus(0)}" (click)="changePositions(0)"> 0</div>
+    <div class="box margin-box" [ngClass]="{enable:GetPositionStatus(1), disable:!GetPositionStatus(1)}" (click)="changePositions(1)"> 1</div>
+    <div class="box" [ngClass]="{enable:GetPositionStatus(2), disable:!GetPositionStatus(2)}" (click)="changePositions(2)">2 </div>
+     
+  </div>
+  <div class="main">
+
+    <div class="box" [ngClass]="{enable:GetPositionStatus(3), disable:!GetPositionStatus(3)}" (click)="changePositions(3)"> 3</div>
+    <div class="box margin-box" [ngClass]="{enable:GetPositionStatus(4), disable:!GetPositionStatus(4)}" (click)="changePositions(4)">4 </div>
+    <div class="box" [ngClass]="{enable:GetPositionStatus(5), disable:!GetPositionStatus(5)}" (click)="changePositions(5)"> 5</div>
+     
+  </div>
+  <div class="main">
+
+    <div class="box" [ngClass]="{enable:GetPositionStatus(6), disable:!GetPositionStatus(6)}" (click)="changePositions(6)"> 6</div>
+    <div class="box margin-box" [ngClass]="{enable:GetPositionStatus(7), disable:!GetPositionStatus(7)}" (click)="changePositions(7)">7</div>
+    <div class="box" [ngClass]="{enable:GetPositionStatus(8), disable:!GetPositionStatus(8)}" (click)="changePositions(8)">8 </div>
+     
+  </div>
+</div>
+<button (click)="reset()" title="Reiniciar"> 
+  reset
+</button>
+<div>
+  <span title="Regras" style="color: black; font-size: 40px;">Regras</span>
+</div>
+<div>
+  <span title="Deixe todos os quadrados iluminados." style="color: black; font-size: 30px;">Deixe todos os quadrados iluminados</span>
+</div>
+<div>
+  <span title="a cada clique ele vai acionar em cruz" style="color: black; font-size: 30px;">a cada clique ele vai acionar em cruz</span>
+</div>

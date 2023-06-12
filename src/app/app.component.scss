@@ -1,0 +1,42 @@
+.enable{
+    background-color: #74a174;
+    color:white;
+}
+.disable{
+    background-color: #f1f3f4;
+    color: darkgreen;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    font-family: runeFont;
+    font-size: 45px;
+    text-align: center;
+}
+.margin-box{
+    margin-inline: 5px;
+}
+.main{
+    margin-top: 5px;
+    display: flex;
+}
+button{
+    margin-top: 10px;
+    margin-left: 0;
+    width: 165px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: runeFont;
+    color: white;
+    background: red;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+span{
+    font-size: 40px;
+    font-family: runeFont;
+    color: darkgreen;
+    margin-inline: 10px;
+}
